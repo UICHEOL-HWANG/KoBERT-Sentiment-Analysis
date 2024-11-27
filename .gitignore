@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+data/raw/test_dataset.json
+data/raw/train_dataset.json
+
 # C extensions
 *.so
 

@@ -1,1 +1,6 @@
-# KoBERT-Sentiment-Analysis
+# KoBERT 기반 7가지 감정 분류 모델
+
+## 프로젝트 개요
+이 프로젝트는 KoBERT를 활용하여 텍스트를 7가지 감정(기쁨, 슬픔, 분노, 공포, 혐오, 놀람, 중립)으로 분류하는 모델을 구축합니다. Hugging Face의 `Trainer` API를 사용하여 효율적으로 모델을 훈련하고 평가하며, 최종 모델을 Hugging Face Model Hub에 업로드합니다.
+
+## 디렉토리 구조
