@@ -1,10 +1,10 @@
 import argparse
 import torch
 
-from src.dataset_manager import DatasetLoader
-from src.model_manager import ModelManager
-from src.trainning_manager import TrainingManager
-from src.config import Config
+from models.src.dataset_manager import DatasetLoader
+from models.src.model_manager import ModelManager
+from models.src.trainning_manager import TrainingManager
+from models.src.config import Config
 
 def parser_args():
     parser = argparse.ArgumentParser(description='모델 파라미터 튜닝')
