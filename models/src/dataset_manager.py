@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import Dataset
 import json
 import os
-from config import Config  # 레이블 매핑 등이 정의된 설정 파일
+from .config import Config  # 레이블 매핑 등이 정의된 설정 파일
 
 
 class DatasetManager(Dataset):
