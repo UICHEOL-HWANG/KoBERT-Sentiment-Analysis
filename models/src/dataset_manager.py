@@ -32,12 +32,8 @@ class DatasetManager(Dataset):
 
         # 데이터 전처리
         texts = [item['발화'] for item in data]
-        labels = [self.label2id.get(item['label'], -1) for item in data]
+        labels = [item['label'] for item in data]
 
-        # 레이블 매핑 검증
-        if -1 in labels:
-            missing_labels = set(item['label'] for item, label in zip(data, labels) if label == -1)
-            raise ValueError(f"매핑되지 않은 레이블이 있습니다: {missing_labels}")
 
         # 토큰화
         encodings = self.tokenizer(

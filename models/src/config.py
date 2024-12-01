@@ -1,5 +1,5 @@
 class Config:
-    ID2LABEL = {
+    LABEL2ID = {
         '공포': 0,
         '놀람': 1,
         '분노': 2,
@@ -9,4 +9,4 @@ class Config:
         '혐오': 6
     }
 
-    LABEL2ID = {label: idx for idx, label in ID2LABEL.items()}
+    ID2LABEL = {v: k for k, v in LABEL2ID.items()}
