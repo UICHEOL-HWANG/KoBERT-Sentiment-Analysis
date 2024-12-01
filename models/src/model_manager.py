@@ -41,10 +41,11 @@ class ModelManager:
             print(f"PAD 토큰이 정의되어 있지 않아 EOS 토큰을 PAD 토큰으로 설정했습니다: {tokenizer.pad_token}")
         model.to(self.device)
 
-        if self.quantize:
-            print('모델 동적 양자화 ..')
-            model = torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
-            print('모델 동적 양자화 완료')
+        # if self.quantize:
+        #     print('모델 동적 양자화 ..')
+        #     model = torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8)
+        #     print('모델 동적 양자화 완료')
+
         # 모델을 지정된 장치로 이동
         print(f'{self.base_model} 모델과 토크나이저가 성공적으로 로드되었습니다.')
         return model, tokenizer

@@ -12,7 +12,7 @@ def parser_args():
     # Data paths
     parser.add_argument('--train_path', type=str, default='../data/raw/train_dataset.json',
                         help='Path to the training dataset JSON file')
-    parser.add_argument('--val_path', type=str, default='../data/raw/val_dataset.json',
+    parser.add_argument('--val_path', type=str, default='../data/raw/test_dataset.json',
                         help='Path to the validation dataset JSON file')
 
     # Model parameters
